@@ -1,0 +1,63 @@
+<html>
+<style>
+    /*Seleção dos estilos*/
+    table{
+        /*estilo para a <table>*/
+        background-color: lightyellow;
+        border: 1px solid black;
+        border-radius: 15px 15px 5px 5px;
+        text-align: left;
+    }
+
+    .titulo {
+        /*estilo para a <th> que é o título na tabela*/
+        background-color: lightblue;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .total {
+        /*estilo para a <th> que é o total*/
+        background-color: lightblue;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    th{
+        border-bottom: 1px dashed black;
+    }
+</style>
+
+<table>
+    <tr>
+        <th class="titulo">Filme</th>
+        <th class="titulo">Genero</th>
+        <th class="titulo">Ano</th>
+        <th class="titulo">Arrecadação</th>
+    </tr>
+    <tr>
+        <th>StarWars</th>
+        <th>Aventura, Sci-Fi</th>
+        <th>1997</th>
+        <th>$460.935.665</th>
+    </tr>
+    <tr>
+        <th>Howard The Duck</th>
+        <th>Comedia</th>
+        <th>1986</th>
+        <th>$16.295.774</th>
+    </tr>
+    <tr>
+        <th>American Graffiti</th>
+        <th>Comedia, Drama</th>
+        <th>1973</th>
+        <th>$115.000.000</th>
+    </tr>
+    <tr>
+        <th class=total colspan="3">Total</th>
+        <th class=total>$592.231.439</th>
+    </tr>
+</table>
+
+</html>
