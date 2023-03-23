@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(to bottom, #ab7bc7, #33073f);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .news {
+    margin-bottom: 40px;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
