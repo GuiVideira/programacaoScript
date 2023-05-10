@@ -1,0 +1,20 @@
+.box_verm{
+    width: auto;
+    height: 40px;
+    background-color: red;
+    border: 1px solid;
+}
+
+.box_verd{
+    width: auto;
+    height: 40px;
+    background-color:green;
+    border: 1px solid;
+}
+
+.box_azul{
+    width: auto;
+    height: 40px;
+    background-color: blue;
+    border: 1px solid;
+}
