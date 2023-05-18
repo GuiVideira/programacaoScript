@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dia da Semana</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+	<form name="formdia" action="" method="post">
+		<label for="f_dia">Digite o dia (01 a 07):</label>
+		<input type="text" name="f_dia" id="f_dia" size="4" maxlength="2" />
+		<p></p>
+		<input type="button" name="btn_processar" value="Processar" onclick="verificadia()" />
+		<input type="reset" name="btn_cancelar" value="Cancelar" /><p></p>
+		O dia correspondente é: <input type="text" name="f_nomedia" id="f_nomedia" size="18" maxlength="15" />
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>

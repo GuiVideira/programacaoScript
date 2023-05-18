@@ -1,0 +1,57 @@
+/* Estilo geral */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  /* Estilo do formulário */
+  form {
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	max-width: 400px;
+  }
+  
+  /* Estilo dos inputs */
+  input[type="text"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+	font-size: 16px;
+	width: 100%;
+  }
+  
+  /* Estilo dos botões */
+  input[type="button"],
+  input[type="reset"] {
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	margin: 20px 5px;
+	background-color: #4caf50;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+  
+  input[type="button"]:hover,
+  input[type="reset"]:hover {
+	background-color: #388e3c;
+  }
+  
+  /* Estilo do resultado */
+  input[type="text"][name="f_nomedia"] {
+	background-color: #f2f2f2;
+	padding: 10px;
+	border: none;
+	margin: 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+  }
+  
