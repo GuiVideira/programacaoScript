@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicio4</title>
+  </head>
+  <body>
+    <script>
+      var numero = parseInt(prompt("Digite um número inteiro positivo:"));
+      var soma = 0;
+
+      // Verifica se o número é positivo
+      if (numero > 0) {
+        // Calcula a soma dos números inteiros positivos
+        for (var i = 1; i <= numero; i++) {
+          soma += i;
+        }
+
+        console.log("A soma dos números de 1 até " + numero + " é: " + soma);
+      } else {
+        console.log("Número inválido. Digite um número inteiro positivo.");
+      }
+
+      document.write(
+        "<p> a soma desse numero até um é: " +
+          soma);
+    </script>
+  </body>
+</html>
