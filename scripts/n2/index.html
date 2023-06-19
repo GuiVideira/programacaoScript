@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Programação Scripts - N2</title>
+  </head>
+
+  <body>
+    <!--Começo da NavBar - bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fim da NavBar - Bootstrap-->
+
+    <!--Conteudo da pagina-->
+    <div class="container">
+      <!--Começo Carrossel - Bootstrap
+        Carrossel: Fotos de receitas com titulo e descrição -->
+      <div class="row">
+        <div class="col-10">
+          <div class="carousel">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!--Botões do Carrossel-->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <!--Slides do Carrossel-->
+              <div class="carousel-inner">
+                <!--Primeiro item-->
+                <div class="carousel-item active">
+                  <img src="./assets/bao.jpg" class="d-block w-100" alt="Bao" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Bao</h5>
+                    <p>
+                      Veja como fazer esta clássica e saborosa receita Taiwanes!
+                    </p>
+                  </div>
+                </div>
+                <!--Segundo item-->
+                <div class="carousel-item">
+                  <img
+                    src="./assets/paoQueijo.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pão de Queijo</h5>
+                    <p>Aprenda a fazer este delicioso pão de queijo!</p>
+                  </div>
+                </div>
+                <!--Terceiro item-->
+                <div class="carousel-item">
+                  <img
+                    src="./assets/boloCenoura.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Bolo de Cenoura</h5>
+                    <p>
+                      Nada como um bolo de cenoura a tarde, aprenda este
+                      delicioso bolo agora!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--Botões do Carrossel-->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim do Carousel - Bootstrap-->
+
+      <!--Começo Accordion - Bootstrap
+        Aqui ficam as receitas mais famosas, mais pesquisadas, etc.-->
+      <div class="row">
+        <div class="col-10">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Bao
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <h1>Receita de Bao</h1>
+
+                  <h2>Lista de Ingredientes</h2>
+                  <ul>
+                    <li>½ tablete de fermento biológico fresco (7,5g)</li>
+                    <li>300 ml de água</li>
+                    <li>¼ de xícara de açúcar</li>
+                    <li>500 g de farinha de trigo</li>
+                    <li>½ colher de sopa de fermento químico em pó (7,5g)</li>
+                    <li>2 colheres de sopa de óleo</li>
+                    <li>1 colher de chá de sal</li>
+                    <li>
+                      400 g de Baby Beef (miolo de alcatra) Estância 92 cortado
+                      em tiras finas
+                    </li>
+                    <li>1 pimenta picada</li>
+                    <li>1 cebola fatiada</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>1 raspa de gengibre</li>
+                    <li>3 colheres de sopa de shoyu</li>
+                    <li>1 colher de chá de mel</li>
+                    <li>1 colher de sopa de óleo de gergelim</li>
+                    <li>1 cenoura ralada</li>
+                    <li>Gergelim torrado a gosto</li>
+                    <li>Cebolinha a gosto</li>
+                    <li>Sal a gosto</li>
+                    <li>Papel-manteiga</li>
+                    <li>Cesta de bambu para cozinhar o bao</li>
+                  </ul>
+
+                  <h2>Modo de Preparo</h2>
+                  <ol>
+                    <li>
+                      Para começar, vamos preparar o bao. Em um recipiente,
+                      misture o fermento biológico com a água e mexa até que o
+                      fermento dissolva. Acrescente o açúcar e repita o processo
+                      anterior. Reserve.
+                    </li>
+                    <li>
+                      Em outro recipiente, coloque a farinha de trigo, o sal, e
+                      o fermento químico em pó e misture. Em seguida, abra um
+                      buraco no meio da farinha e acrescente aos poucos a
+                      mistura líquida com o fermento biológico.
+                    </li>
+                    <li>
+                      Agora, com as mãos bem limpas, mexa bem até formar uma
+                      massa. Junte o óleo e continue mexendo até incorporar
+                      todos os ingredientes. Em seguida, sove a massa até ficar
+                      com uma textura bem lisa.
+                    </li>
+                    <li>
+                      Transfira a massa para uma tigela polvilhada com farinha
+                      de trigo, cubra com papel-filme e deixe descansar até
+                      dobrar de tamanho, o que deve levar cerca de 30 minutos.
+                    </li>
+                    <li>
+                      Passado esse tempo, divida a massa em 6 partes iguais.
+                      Faça bolinhas e coloque sobre uma superfície enfarinhada.
+                    </li>
+                    <li>
+                      Abra cada bolinha como um disco pequeno. Pincele cada um
+                      com óleo, dobre em formato de meia lua, sem pressionar, e
+                      coloque sobre papel-manteiga untado com óleo. Deixe
+                      descansar novamente até dobrar de tamanho.
+                    </li>
+                    <li>
+                      Agora, com cuidado, transfira os pães para uma cesta de
+                      bambu para cozinhar no vapor. Coloque a cesta de bambu
+                      sobre uma panela de água fervente e cozinhe por cerca de
+                      12 minutos ou até que fiquem firmes.
+                    </li>
+                    <li>
+                      Enquanto os pães estão cozinhando, podemos preparar o
+                      recheio. Em um recipiente, misture a carne com a pimenta,
+                      a cebola, o alho, o gengibre, o shoyu, o mel, o óleo de
+                      gergelim e sal a gosto. Deixe a carne marinar por 20
+                      minutos.
+                    </li>
+                    <li>
+                      Aqueça uma frigideira com um fio de óleo em fogo médio e
+                      refogue toda a carne até ficar bem dourada.
+                    </li>
+                    <li>
+                      Para finalizar, recheie cada bao com uma porção de carne e
+                      um pouco de cenoura ralada. Polvilhe grãos de gergelim e
+                      cebolinha finamente fatiada sobre eles e sirva. Bom
+                      apetite!
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Pão de quejo
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <h1>Receita de Pão de Queijo</h1>
+
+                  <h2>Lista de Ingredientes</h2>
+                  <ul>
+                    <li>2 e 1/2 xícaras (chá) de água (600 ml)</li>
+                    <li>1 e 1/2 xícara (chá) de óleo</li>
+                    <li>1 e 1/2 xícara (chá) de leite</li>
+                    <li>1 colher (sopa) cheia de sal</li>
+                    <li>1 kg de polvilho azedo</li>
+                    <li>6 ovos</li>
+                    <li>150 g de parmesão ralado</li>
+                  </ul>
+
+                  <h2>Modo de Preparo</h2>
+                  <ol>
+                    <li>
+                      Ferva a água com o óleo, o leite e o sal e escalde o
+                      polvilho, envolvendo bem. Deixe esfriar.
+                    </li>
+                    <li>
+                      Acrescente os ovos um a um, misturando bem, e incorpore o
+                      queijo.
+                    </li>
+                    <li>
+                      Amasse até uniformizar, modele bolinhas e disponha em
+                      assadeiras sem untar.
+                    </li>
+                    <li>
+                      Leve ao forno médio preaquecido (200 ºC) por 20 minutos.
+                    </li>
+                    <li>
+                      Reduza a temperatura e deixe assar por mais uns 5 minutos
+                      ou até dourarem.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Bolo de Cenoura
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <h1>Bolo de Cenoura</h1>
+
+                  <h2>Ingredientes</h2>
+                  <ul>
+                    <li>3 ovos</li>
+                    <li>2 xícaras (chá) de cenoura picada</li>
+                    <li>2 xícaras (chá) de açúcar</li>
+                    <li>
+                      1/2 xícara (chá) de leite ou suco de laranja (100 ml)
+                    </li>
+                    <li>1/2 xícara (chá) de óleo</li>
+                    <li>3 xícaras (chá) de farinha de trigo (330 g)</li>
+                    <li>1 colher (sopa) de fermento químico em pó</li>
+                  </ul>
+
+                  <h2>Modo de Preparo</h2>
+                  <ol>
+                    <li>
+                      Bata os ovos com a cenoura, o açúcar, o leite (ou suco de
+                      laranja) e o óleo no liquidificador por cerca de 4 minutos
+                      ou até obter uma mistura uniforme.
+                    </li>
+                    <li>
+                      Despeje sobre a farinha misturada com o fermento e mexa
+                      até incorporar completamente.
+                    </li>
+                    <li>
+                      Disponha em fôrma retangular (22 x 32 cm) untada e
+                      enfarinhada.
+                    </li>
+                    <li>
+                      Asse em forno médio preaquecido (200 ºC) por cerca de 40
+                      minutos ou até dourar.
+                    </li>
+                    <li>
+                      Depois de morno, regue com a calda de chocolate, polvilhe
+                      granulado e sirva em pedaços.
+                    </li>
+                  </ol>
+
+                  <h2>Cobertura</h2>
+                  <ol>
+                    <li>Dilua o amido no leite em uma panela.</li>
+                    <li>
+                      Junte o açúcar e o chocolate em pó e leve ao fogo médio,
+                      mexendo sempre, até encorpar.
+                    </li>
+                    <li>
+                      Distribua sobre o bolo quente e espalhe com as costas de
+                      uma colher.
+                    </li>
+                  </ol>
+
+                  <p>
+                    Se preferir, substitua a cobertura por 150 g de raspas de
+                    chocolate ao leite ou meio amargo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim Accordion - Bootstrap-->
+    </div>
+    <!-- FIm do Conteudo da pagina-->
+
+    <footer class="footer">
+      <p>&copy; 2023 Site de Receita. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
